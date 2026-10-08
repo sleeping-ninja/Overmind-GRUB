@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Overmind Virtual Desktop Wallpaper
+Comment=Switch Overmind wallpaper with Plasma virtual desktops
+Exec=/home/kill/bin/overmind-vdesktop-wallpaper.sh
+Terminal=false
+X-KDE-autostart-after=panel
+X-KDE-StartupNotify=false

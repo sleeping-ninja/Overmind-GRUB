@@ -1,0 +1,5 @@
+#!/bin/sh
+cat <<'EOF'
+insmod png
+background_image -m stretch /boot/grub/overmind-background.png
+EOF
