@@ -63,7 +63,7 @@ Instead, standard GRUB is retained and the Overmind artwork is used directly as 
 
 ## Install the Background
 
-From the `kdesktop` directory:
+From the `kde-desktop-setup` directory:
 
 ```bash
 sudo cp ../overmind-grub-1280x720.png \
@@ -182,6 +182,26 @@ Desktop 1 -> overmind-desktop-1-3840x2160.png
 Desktop 2 -> overmind-desktop-2-3840x2160.png
 ```
 
+### Set the Initial Plasma Wallpaper
+
+Before enabling the virtual-desktop watcher, set Plasma's normal desktop wallpaper to:
+
+```text
+~/Sauce/Overmind-GRUB/kde-desktop-setup/overmind-desktop-1-3840x2160.png
+```
+
+This ensures the Overmind artwork is already visible immediately after login, before the autostart watcher begins. The watcher will then take over normally and switch between the Desktop 1 and Desktop 2 perspectives.
+
+You can set it through:
+
+```text
+Right-click Desktop
+-> Desktop and Wallpaper
+-> Wallpaper
+-> Add Image
+-> overmind-desktop-1-3840x2160.png
+```
+
 ## Install
 
 Create the script directory:
@@ -203,7 +223,7 @@ chmod +x \
 The script currently expects the wallpaper assets at:
 
 ```text
-~/Sauce/Overmind-GRUB/kdesktop/
+~/Sauce/Overmind-GRUB/kde-desktop-setup/
 ```
 
 If the repository is installed somewhere else, edit the two wallpaper paths in:

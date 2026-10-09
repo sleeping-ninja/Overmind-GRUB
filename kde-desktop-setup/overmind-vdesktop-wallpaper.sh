@@ -1,7 +1,7 @@
 #!/bin/bash
 
-DESKTOP1="$HOME/Sauce/Overmind-GRUB/kdesktop/overmind-desktop-1-3840x2160.png"
-DESKTOP2="$HOME/Sauce/Overmind-GRUB/kdesktop/overmind-desktop-2-3840x2160.png"
+DESKTOP1="$HOME/Sauce/Overmind-GRUB/kde-desktop-setup/overmind-desktop-1-3840x2160.png"
+DESKTOP2="$HOME/Sauce/Overmind-GRUB/kde-desktop-setup/overmind-desktop-2-3840x2160.png"
 
 exec 9>"${XDG_RUNTIME_DIR:-/tmp}/overmind-vdesktop-wallpaper.lock"
 flock -n 9 || exit 0
